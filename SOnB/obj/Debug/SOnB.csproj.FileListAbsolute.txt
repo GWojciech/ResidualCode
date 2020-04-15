@@ -1,0 +1,7 @@
+D:\Wojtek\Studia\Programowanie\C#\SOnB\SOnB\SOnB\bin\Debug\SOnB.exe.config
+D:\Wojtek\Studia\Programowanie\C#\SOnB\SOnB\SOnB\bin\Debug\SOnB.exe
+D:\Wojtek\Studia\Programowanie\C#\SOnB\SOnB\SOnB\bin\Debug\SOnB.pdb
+D:\Wojtek\Studia\Programowanie\C#\SOnB\SOnB\SOnB\obj\Debug\SOnB.csprojAssemblyReference.cache
+D:\Wojtek\Studia\Programowanie\C#\SOnB\SOnB\SOnB\obj\Debug\SOnB.csproj.CoreCompileInputs.cache
+D:\Wojtek\Studia\Programowanie\C#\SOnB\SOnB\SOnB\obj\Debug\SOnB.exe
+D:\Wojtek\Studia\Programowanie\C#\SOnB\SOnB\SOnB\obj\Debug\SOnB.pdb

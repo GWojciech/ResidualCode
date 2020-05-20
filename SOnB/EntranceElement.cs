@@ -44,6 +44,8 @@ namespace SOnB
             int secondNumber;
             int moduloNumber;
 
+            Console.WriteLine("WARTOŚĆ: " + typeOfValue);
+
             if (typeOfValue.Equals("DEC"))
             {
                 firstNumber = Convert.ToInt32(firstNumberString);

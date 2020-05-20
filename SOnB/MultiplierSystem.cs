@@ -3,6 +3,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 
+
 namespace SOnB
 {
     class MultiplierSystem
@@ -11,6 +12,7 @@ namespace SOnB
         private int firstNumber;
         private int secondNumber;
         private int modulo;
+
 
         private int MultiplyWithCheck(int errorInMultiply = 0, int errorInCheck = 0)
         {
@@ -53,6 +55,7 @@ namespace SOnB
             {
                 Console.WriteLine("\nUkład mnożący {0}:", number);
                 Console.WriteLine("Pierwsza liczba: {0}, druga liczba: {1}, a podstawa kodu {2}\n", firstNumber, secondNumber, modulo);
+
             }
             s.Close();
         }
@@ -73,7 +76,6 @@ namespace SOnB
             Send(Convert.ToString(result));
 
         }
-
 
 
     }

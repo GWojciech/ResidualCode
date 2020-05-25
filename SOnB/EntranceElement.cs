@@ -38,7 +38,7 @@ namespace SOnB
             tcpLsn.Stop();
         }
 
-        public void SendData(string typeOfValue, string firstNumberString, string secondNumberString, string moduloString, string errorInMultiplyString = null, string errorInCheckString = null)
+        public void SendData(string typeOfValue, string firstNumberString, string secondNumberString, string moduloString)
         {
             int firstNumber;
             int secondNumber;
@@ -68,6 +68,7 @@ namespace SOnB
 
             firstNumber = firstNumber & 15;
             secondNumber = secondNumber & 15;
+
             Serve(firstNumber, secondNumber, moduloNumber);
         }
 

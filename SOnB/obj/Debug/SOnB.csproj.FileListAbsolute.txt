@@ -5,3 +5,6 @@ D:\Wojtek\Studia\Programowanie\C#\SOnB\SOnB\SOnB\obj\Debug\SOnB.csproj.CoreCompi
 D:\Wojtek\Studia\Programowanie\C#\SOnB\SOnB\SOnB\obj\Debug\SOnB.exe
 D:\Wojtek\Studia\Programowanie\C#\SOnB\SOnB\SOnB\obj\Debug\SOnB.pdb
 D:\Wojtek\Studia\Programowanie\C#\SOnB\SOnB\SOnB\obj\Debug\SOnB.csprojAssemblyReference.cache
+D:\Wojtek\Studia\Programowanie\C#\SOnB\SOnB\SOnB\obj\Debug\SOnB.Form1.resources
+D:\Wojtek\Studia\Programowanie\C#\SOnB\SOnB\SOnB\obj\Debug\SOnB.Properties.Resources.resources
+D:\Wojtek\Studia\Programowanie\C#\SOnB\SOnB\SOnB\obj\Debug\SOnB.csproj.GenerateResource.cache

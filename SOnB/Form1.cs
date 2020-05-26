@@ -112,8 +112,6 @@ namespace SOnB
             string firstNumberTxt = textBox2.Text;
             string secondNumberTxt = textBox3.Text;
             string moduleTxt = textBox4.Text;
-            int multResult;
-            int modResult;
 
 
             arguments.Add(selectedSystem);
@@ -130,7 +128,7 @@ namespace SOnB
             label11.Text = textBox3.Text;
 
 
-            if (radioButton1.Checked == false)
+            if (checkBoxError.Checked == false)
             {
 
                 backgroundWorker1.RunWorkerAsync(arguments);
@@ -139,27 +137,28 @@ namespace SOnB
             }
             else
             {
-                if (checkedListBox1.SelectedIndex == null)
-                {
-                }
-
-                if (checkedListBox1.SelectedIndex == 0)
+                if (checkedListBox1.GetItemChecked(0))
                 {
                     arguments[4] = errors[0];
+                    Console.WriteLine(0);
                 }
-                if (checkedListBox1.SelectedIndex == 1)
+                if (checkedListBox1.GetItemChecked(1))
                 {
                     arguments[5] = errors[1];
+                    Console.WriteLine(1);
 
                 }
-                if (checkedListBox1.SelectedIndex == 2)
+                if (checkedListBox1.GetItemChecked(2))
                 {
                     arguments[6] = errors[2];
-                  
+                    Console.WriteLine(2);
+
                 }
-                if (checkedListBox1.SelectedIndex == 3)
+                if (checkedListBox1.GetItemChecked(3))
                 {
                     arguments[7] = errors[3];
+                    Console.WriteLine(3);
+
                 }
 
 
@@ -195,8 +194,8 @@ namespace SOnB
 
 
             int firstMultError = (int)genericlist[4];
-            int secondMultError = (int)genericlist[5];
-            int firstModError = (int)genericlist[6];
+            int firstModError = (int)genericlist[5];
+            int secondMultError = (int)genericlist[6];
             int secondModError = (int)genericlist[7];
 
             threads[0] = new Thread(delegate () { entranceElement.SendData((string)genericlist[0], (string)genericlist[1], (string)genericlist[2], (string)genericlist[3]); });

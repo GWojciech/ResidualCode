@@ -13,11 +13,12 @@ namespace SOnB
             int i = 0;
             Socket sckt;
             string text = "";
-            Byte[] receivedBytes = new Byte[100];
+            Byte[] receivedBytes;
             tcpLsn = new TcpListener(IPAddress.Parse("127.0.0.1"), 2223); //zainicjiuj listenera na podanym porcie i adresie
             tcpLsn.Start();
             while (i < 2)
             {
+                receivedBytes = new Byte[10];
                 sckt = tcpLsn.AcceptSocket(); //funkcja blokujaca do czasu nadejscia - połaczenia
                 sckt.Receive(receivedBytes, receivedBytes.Length, 0);
                 text += System.Text.Encoding.ASCII.GetString(receivedBytes);
@@ -49,8 +50,8 @@ namespace SOnB
             }
             else if (result1 == -1 && result2 == -1)
             {
-                Console.WriteLine("Coś poszło nie tak, wynik1 = {0} , wynik2 = {1} (prawdopodobnie oba układy nie są sprawne)", result1, result2);
-                return "Coś poszło nie tak, wynik1 = " + result1 + ", wynik2 = " + result2 + " (prawdopodobnie oba układy nie są sprawne)";
+                Console.WriteLine("Oba układy nie są sprawne");
+                return "Oba układy nie są sprawne";
 
 
 
@@ -61,7 +62,11 @@ namespace SOnB
                 return "Wynik to " + result1 + ", oba układy sprawne";
 
             }
-            return null;
+            else
+            {
+                Console.WriteLine("Wyniki niejednoznaczne: {0} vs {1}", result1, result2);
+                return "Wyniki niejednoznaczne: " + result1 + " vs " + result2;
+            }
 
         }
 

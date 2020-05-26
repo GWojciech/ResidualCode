@@ -74,7 +74,7 @@ namespace SOnB
             Receive(number);
             Connect(2223);
             int resultWithError = MultiplyWithCheck(multError, modError);
-            Send(Convert.ToString(resultWithError));
+            Send(resultWithError.ToString());
 
             return new int[] {firstNumber, secondNumber, modulo, result, checkModuloResult};
 

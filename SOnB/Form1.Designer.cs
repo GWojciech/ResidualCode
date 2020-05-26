@@ -52,7 +52,6 @@ namespace SOnB
             this.multiplier1Result = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.multiplier2Result = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -72,6 +71,7 @@ namespace SOnB
             this.button9 = new System.Windows.Forms.Button();
             this.multiplicationEquation1 = new System.Windows.Forms.Label();
             this.multiplicationEquation2 = new System.Windows.Forms.Label();
+            this.checkBoxError = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,7 +88,7 @@ namespace SOnB
             // button1
             // 
             this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(20, 163);
+            this.button1.Location = new System.Drawing.Point(20, 154);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
@@ -229,7 +229,8 @@ namespace SOnB
             // moduloResult1
             // 
             this.moduloResult1.AutoSize = true;
-            this.moduloResult1.Location = new System.Drawing.Point(427, 355);
+            this.moduloResult1.BackColor = System.Drawing.Color.White;
+            this.moduloResult1.Location = new System.Drawing.Point(416, 355);
             this.moduloResult1.Name = "moduloResult1";
             this.moduloResult1.Size = new System.Drawing.Size(41, 13);
             this.moduloResult1.TabIndex = 19;
@@ -239,7 +240,8 @@ namespace SOnB
             // moduloResult2
             // 
             this.moduloResult2.AutoSize = true;
-            this.moduloResult2.Location = new System.Drawing.Point(689, 355);
+            this.moduloResult2.BackColor = System.Drawing.Color.White;
+            this.moduloResult2.Location = new System.Drawing.Point(680, 355);
             this.moduloResult2.Name = "moduloResult2";
             this.moduloResult2.Size = new System.Drawing.Size(41, 13);
             this.moduloResult2.TabIndex = 20;
@@ -292,17 +294,6 @@ namespace SOnB
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(219, 109);
             this.checkedListBox1.TabIndex = 25;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(20, 193);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(106, 17);
-            this.radioButton1.TabIndex = 26;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Uwzględnij błędy";
-            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // multiplier2Result
             // 
@@ -470,6 +461,7 @@ namespace SOnB
             // multiplicationEquation1
             // 
             this.multiplicationEquation1.AutoSize = true;
+            this.multiplicationEquation1.BackColor = System.Drawing.Color.White;
             this.multiplicationEquation1.Location = new System.Drawing.Point(479, 235);
             this.multiplicationEquation1.Name = "multiplicationEquation1";
             this.multiplicationEquation1.Size = new System.Drawing.Size(35, 13);
@@ -480,6 +472,7 @@ namespace SOnB
             // multiplicationEquation2
             // 
             this.multiplicationEquation2.AutoSize = true;
+            this.multiplicationEquation2.BackColor = System.Drawing.Color.White;
             this.multiplicationEquation2.Location = new System.Drawing.Point(741, 235);
             this.multiplicationEquation2.Name = "multiplicationEquation2";
             this.multiplicationEquation2.Size = new System.Drawing.Size(35, 13);
@@ -487,11 +480,22 @@ namespace SOnB
             this.multiplicationEquation2.Text = "label6";
             this.multiplicationEquation2.Visible = false;
             // 
+            // checkBoxError
+            // 
+            this.checkBoxError.AutoSize = true;
+            this.checkBoxError.Location = new System.Drawing.Point(20, 192);
+            this.checkBoxError.Name = "checkBoxError";
+            this.checkBoxError.Size = new System.Drawing.Size(107, 17);
+            this.checkBoxError.TabIndex = 46;
+            this.checkBoxError.Text = "Uwzględnij błędy";
+            this.checkBoxError.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1114, 661);
+            this.Controls.Add(this.checkBoxError);
             this.Controls.Add(this.multiplicationEquation2);
             this.Controls.Add(this.multiplicationEquation1);
             this.Controls.Add(this.button9);
@@ -511,7 +515,6 @@ namespace SOnB
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.multiplier2Result);
-            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.multiplier1Result);
@@ -569,7 +572,6 @@ namespace SOnB
         private System.Windows.Forms.Label multiplier1Result;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
-        private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Label multiplier2Result;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
@@ -589,5 +591,6 @@ namespace SOnB
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Label multiplicationEquation1;
         private System.Windows.Forms.Label multiplicationEquation2;
+        private System.Windows.Forms.CheckBox checkBoxError;
     }
 }
